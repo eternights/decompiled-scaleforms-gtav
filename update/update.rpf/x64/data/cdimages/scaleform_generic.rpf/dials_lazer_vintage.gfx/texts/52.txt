@@ -1,0 +1,17 @@
+[
+xmin -40
+ymin -40
+xmax 306
+ymax 185
+readonly 1
+html 1
+useoutlines 1
+font 41
+height 120
+color #ffaad590
+align center
+leftmargin 0
+rightmargin 0
+indent 0
+leading 40
+]<p align="center"><font face="$Font2" size="6" color="#aad590" letterSpacing="0.000000" kerning="1">15</font></p>

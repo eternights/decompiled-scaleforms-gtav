@@ -1,0 +1,167 @@
+[
+xmin 23
+ymin 3
+xmax 4977
+ymax 8260
+][
+font 14
+height 210
+letterspacing 126
+color #ffffff
+y 180
+spacingpair " " "0" 19
+spacingpair " " "1" 19
+spacingpair " " "" -83
+]1 010 10101110111 010 11 00 1 00 1 0 0 [
+x 0
+y 460
+spacingpair " " "1" 3
+spacingpair " " "0" 3
+spacingpair " " " " 3
+spacingpair " " "" -70
+]11 1 1 0 1   0  00000   11 11 10 0 01 1 [
+x 0
+y 740
+spacingpair " " "0" 17
+spacingpair " " "1" 17
+spacingpair " " "" -80
+]0 0 10 1 1 0 1111 00 10 1000 11 110001 [
+x 0
+y 1000
+spacingpair " " "0" 32
+spacingpair " " "1" 32
+spacingpair " " "" -85
+]01011 00011 1011 0010 01 01101110 0001 [
+x 0
+y 1280
+spacingpair " " "0" 35
+spacingpair " " " " 35
+spacingpair " " "1" 35
+spacingpair " " "" -82
+]110101 0   10 10101110111 010 11 00 1 [
+x 0
+y 1560
+]00 1 0 0 11 1 1 0 1 0  0000011 11 10 0 [
+x 0
+y 1840
+spacingpair " " "0" 19
+spacingpair " " "1" 19
+spacingpair " " "" -83
+]1 010 10101110111 010 11 00 1 00 1 0 0 [
+x 0
+y 2120
+spacingpair " " "1" 3
+spacingpair " " "0" 3
+spacingpair " " " " 3
+spacingpair " " "" -70
+]11 1 1 0 1   0  00000   11 11 10 0 01 1 [
+x 0
+y 2400
+spacingpair " " "0" 17
+spacingpair " " "1" 17
+spacingpair " " "" -80
+]0 0 10 1 1 0 1111 00 10 1000 11 110001 [
+x 0
+y 2680
+spacingpair " " "0" 32
+spacingpair " " "1" 32
+spacingpair " " "" -85
+]01011 00011 1011 0010 01 01101110 0001 [
+x 0
+y 2960
+spacingpair " " "0" 35
+spacingpair " " " " 35
+spacingpair " " "1" 35
+spacingpair " " "" -82
+]110101 0   10 10101110111 010 11 00 1 [
+x 0
+y 3240
+]00 1 0 0 11 1 1 0 1 0  0000011 11 10 0[
+x 0
+y 3520
+spacingpair " " "0" 19
+spacingpair " " "1" 19
+spacingpair " " "" -83
+]1 010 10101110111 010 11 00 1 00 1 0 0 [
+x 0
+y 3780
+spacingpair " " "1" 3
+spacingpair " " "0" 3
+spacingpair " " " " 3
+spacingpair " " "" -70
+]11 1 1 0 1   0  00000   11 11 10 0 01 1 [
+x 0
+y 4060
+spacingpair " " "0" 17
+spacingpair " " "1" 17
+spacingpair " " "" -80
+]0 0 10 1 1 0 1111 00 10 1000 11 110001 [
+x 0
+y 4340
+spacingpair " " "0" 32
+spacingpair " " "1" 32
+spacingpair " " "" -85
+]01011 00011 1011 0010 01 01101110 0001 [
+x 0
+y 4620
+spacingpair " " "0" 35
+spacingpair " " " " 35
+spacingpair " " "1" 35
+spacingpair " " "" -82
+]110101 0   10 10101110111 010 11 00 1 [
+x 0
+y 4900
+]00 1 0 0 11 1 1 0 1 0  0000011 11 10 0[
+x 0
+y 5180
+spacingpair " " "0" 19
+spacingpair " " "1" 19
+spacingpair " " "" -83
+]1 010 10101110111 010 11 00 1 00 1 0 0 [
+x 0
+y 5460
+spacingpair " " "1" 3
+spacingpair " " "0" 3
+spacingpair " " " " 3
+spacingpair " " "" -70
+]11 1 1 0 1   0  00000   11 11 10 0 01 1 [
+x 0
+y 5740
+spacingpair " " "0" 17
+spacingpair " " "1" 17
+spacingpair " " "" -80
+]0 0 10 1 1 0 1111 00 10 1000 11 110001 [
+x 0
+y 6020
+spacingpair " " "0" 32
+spacingpair " " "1" 32
+spacingpair " " "" -85
+]01011 00011 1011 0010 01 01101110 0001 [
+x 0
+y 6300
+spacingpair " " "0" 35
+spacingpair " " " " 35
+spacingpair " " "1" 35
+spacingpair " " "" -82
+]110101 0   10 10101110111 010 11 00 1 [
+x 0
+y 6560
+]00 1 0 0 11 1 1 0 1 0  0000011 11 10 0[
+x 0
+y 6840
+]1 010 10101110111 010 11 00 1 00 1 0 0[
+x 0
+y 7120
+]11 1 1 0 1   0  00000   11 11 10 0 01 1[
+x 0
+y 7400
+]00 10 1 1 0 1111 00 10 1000 11  110001[
+x 0
+y 7680
+]01011 00011 1011 0010 01 01101110 0001[
+x 0
+y 7960
+]110101 0   10 10101110111 010 11 00 1[
+x 0
+y 8240
+]00 1 0 0 11 1 1 0 1 0  0000011 11 10 0

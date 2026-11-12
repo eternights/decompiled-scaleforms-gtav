@@ -1,0 +1,18 @@
+[
+xmin -40
+ymin -40
+xmax 9960
+ymax 428
+readonly 1
+noselect 1
+html 1
+useoutlines 1
+font 22
+height 320
+color #ffc2b278
+align center
+leftmargin 0
+rightmargin 0
+indent 0
+leading -40
+]<p align="center"><font face="$Font2" size="16" color="#c2b278" letterSpacing="0.000000" kerning="1">MMMMMMM</font></p>

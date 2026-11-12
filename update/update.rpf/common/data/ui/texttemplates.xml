@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CTextTemplateXML>
+
+  <CTemplate>
+  
+	<Item>
+		<templateId>TEXT_TEMPLATE_CUSTOM</templateId>
+		<actionScriptEnum value="0"/> 
+		
+		<data>
+			<Item> <propertyId>TEXT</propertyId> <index value="0"/> <actionScriptEnum value="0"/> <defaultValue value="0"/> <visibleInMenu value="true"/> </Item>
+			<Item> <propertyId>FONT</propertyId> <index value="0"/> <actionScriptEnum value="1"/> <dataId>STANDARD_FONTS</dataId> <defaultValue value="0"/> <visibleInMenu value="true"/> </Item>
+			<Item> <propertyId>COLOR</propertyId> <index value="0"/> <actionScriptEnum value="2"/> <dataId>STANDARD_COLORS</dataId> <defaultValue value="0"/> <visibleInMenu value="true"/> </Item>
+			<Item> <propertyId>POSITION_X</propertyId> <index value="0"/> <actionScriptEnum value="3"/> <visibleInMenu value="false"/> </Item>
+			<Item> <propertyId>POSITION_Y</propertyId> <index value="0"/> <actionScriptEnum value="4"/> <visibleInMenu value="false"/> </Item>
+			<Item> <propertyId>SCALE</propertyId> <index value="0"/> <actionScriptEnum value="5"/> <visibleInMenu value="false"/> </Item>
+			<Item> <propertyId>OPACITY</propertyId> <index value="0"/> <actionScriptEnum value="6"/> <visibleInMenu value="false"/> </Item>
+		</data>
+	</Item>
+
+	<Item>
+		<templateId>TEXT_TEMPLATE_FONT_RESTRICTED</templateId>
+		<actionScriptEnum value="1"/> 
+		
+		<data>
+			<Item> <propertyId>TEXT</propertyId> <index value="0"/> <actionScriptEnum value="0"/> <defaultValue value="0"/> <visibleInMenu value="true"/> </Item>
+			<Item> <propertyId>COLOR</propertyId> <index value="0"/> <actionScriptEnum value="2"/> <dataId>STANDARD_COLORS</dataId> <defaultValue value="0"/> <visibleInMenu value="true"/> </Item>
+			<Item> <propertyId>POSITION</propertyId> <index value="0"/> <actionScriptEnum value="3"/> <visibleInMenu value="false"/> </Item>
+			<Item> <propertyId>POSITION</propertyId> <index value="0"/> <actionScriptEnum value="4"/> <visibleInMenu value="false"/> </Item>
+			<Item> <propertyId>SCALE</propertyId> <index value="0"/> <actionScriptEnum value="5"/> <visibleInMenu value="false"/> </Item>
+			<Item> <propertyId>OPACITY</propertyId> <index value="0"/> <actionScriptEnum value="6"/> <visibleInMenu value="false"/> </Item>
+		</data>
+	</Item>
+	
+	<Item>
+		<templateId>TEXT_TEMPLATE_SNAPMATIC</templateId>
+		<actionScriptEnum value="2"/> 
+		
+		<data>
+			<Item> <propertyId>TEXT</propertyId> <index value="0"/> <actionScriptEnum value="0"/> <defaultValue value="0"/> <visibleInMenu value="false"/> </Item>
+			<Item> <propertyId>FONT</propertyId> <index value="0"/> <actionScriptEnum value="1"/> <dataId>STANDARD_FONTS</dataId> <defaultValue value="0"/> <visibleInMenu value="false"/> </Item>
+			<Item> <propertyId>COLOR</propertyId> <index value="0"/> <actionScriptEnum value="2"/> <dataId>STANDARD_COLORS</dataId> <defaultValue value="0"/> <visibleInMenu value="false"/> </Item>
+			<Item> <propertyId>POSITION_X</propertyId> <index value="0"/> <actionScriptEnum value="3"/> <visibleInMenu value="false"/> </Item>
+			<Item> <propertyId>POSITION_Y</propertyId> <index value="0"/> <actionScriptEnum value="4"/> <visibleInMenu value="false"/> </Item>
+			<Item> <propertyId>SCALE</propertyId> <index value="0"/> <actionScriptEnum value="5"/> <visibleInMenu value="false"/> </Item>
+		</data>
+	</Item>
+	
+ </CTemplate>
+ 
+ 
+ <CProperties>
+ 
+	<Item>
+		<propertyId>STANDARD_FONTS</propertyId>
+			<data>
+				<Item> <valueNumber value ="0"/> <valueString>$Font2</valueString> </Item>
+				<Item> <valueNumber value ="1"/> <valueString>$Font5</valueString> </Item>
+				<Item> <valueNumber value ="4"/> <valueString>$Font2_cond_NOT_GAMERNAME</valueString> </Item>
+				<Item> <valueNumber value ="7"/> <valueString>$gtaCash</valueString> </Item>
+				
+				<Item> <valueNumber value ="100"/> <valueString>$Din</valueString> </Item>
+				<Item> <valueNumber value ="101"/> <valueString>$HandstyleHeist</valueString> </Item>
+				<Item> <valueNumber value ="102"/> <valueString>$Helvetica107</valueString> </Item>
+				<Item> <valueNumber value ="103"/> <valueString>$Helvetica55</valueString> </Item>
+				<Item> <valueNumber value ="104"/> <valueString>$Machine</valueString> </Item>
+				<Item> <valueNumber value ="105"/> <valueString>$Redemption</valueString> </Item>
+				<Item> <valueNumber value ="106"/> <valueString>$Univers</valueString> </Item>
+				<Item> <valueNumber value ="107"/> <valueString>$Rage</valueString> </Item>
+				<Item> <valueNumber value ="108"/> <valueString>$OldEnglish</valueString> </Item>
+			</data>
+	</Item>
+	
+	<Item>
+		<propertyId>STANDARD_COLORS</propertyId>
+			<data>
+				<Item> <valueHash>HUD_COLOUR_WHITE</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_PINK</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_REDLIGHT</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_RED</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_REDDARK</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_ORANGELIGHT</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_ORANGE</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_ORANGEDARK</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_YELLOWLIGHT</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_YELLOW</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_YELLOWDARK</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_GREENLIGHT</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_GREEN</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_GREENDARK</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_BLUELIGHT</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_BLUE</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_BLUEDARK</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_PURPLE</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_PURPLEDARK</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_GREYLIGHT</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_GREY</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_GREYDARK</valueHash> </Item>
+				<Item> <valueHash>HUD_COLOUR_BLACK</valueHash> </Item>
+			</data>
+	</Item>
+
+</CProperties>
+
+ </CTextTemplateXML>
+
+ 

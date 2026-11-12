@@ -1,0 +1,21 @@
+[
+xmin 180
+ymin -40
+xmax 2700
+ymax 552
+wordwrap 1
+multiline 1
+readonly 1
+noselect 1
+wasstatic 1
+html 1
+useoutlines 1
+font 44
+height 400
+color #ffffff00
+align center
+leftmargin 0
+rightmargin 0
+indent 0
+leading 0
+]<p align="center"><font face="$Font2" size="20" color="#ffff00" letterSpacing="0.000000" kerning="0">YOU GIVE. </font></p>

@@ -1,0 +1,14 @@
+[
+xmin 275
+ymin 18
+xmax 555
+ymax 253
+][
+font 74
+height 240
+color #d0ffb0
+x 260
+y 240
+spacingpair "8" "0" 133
+spacingpair "0" "" 144
+]80

@@ -1,0 +1,14 @@
+[
+xmin -34
+ymin 17
+xmax 650
+ymax 292
+translatex -101
+][
+font 6
+height 300
+color #000000
+x 40
+y 280
+spacingpair "B" " " 1
+]RB 

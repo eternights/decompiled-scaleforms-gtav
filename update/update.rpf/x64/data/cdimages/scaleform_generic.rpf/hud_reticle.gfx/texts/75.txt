@@ -1,0 +1,12 @@
+[
+xmin 345
+ymin 18
+xmax 489
+ymax 253
+][
+font 74
+height 240
+color #d0ffb0
+x 340
+y 240
+]0[space 144]

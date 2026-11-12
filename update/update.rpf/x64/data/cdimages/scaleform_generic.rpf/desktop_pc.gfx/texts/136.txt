@@ -1,0 +1,19 @@
+[
+xmin -735
+ymin -40
+xmax 3615
+ymax 452
+multiline 1
+readonly 1
+noselect 1
+wasstatic 1
+useoutlines 1
+font 44
+height 320
+color #ffcc0606
+align center
+leftmargin 0
+rightmargin 0
+indent 0
+leading -40
+]LIVE MESSENGER CHAT

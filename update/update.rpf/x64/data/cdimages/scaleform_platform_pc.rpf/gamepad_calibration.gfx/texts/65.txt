@@ -1,0 +1,19 @@
+[
+xmin -40
+ymin -40
+xmax 19958
+ymax 1093
+wordwrap 1
+multiline 1
+readonly 1
+html 1
+useoutlines 1
+font 4
+height 260
+color #feffffff
+align center
+leftmargin 0
+rightmargin 0
+indent 0
+leading 40
+]<p align="center"><font face="$Font2" size="13" color="#ffffff" letterSpacing="0.000000" kerning="1">Move (or Press) and hold the equivalent control on your gamepad until the bar is filled.</font></p>

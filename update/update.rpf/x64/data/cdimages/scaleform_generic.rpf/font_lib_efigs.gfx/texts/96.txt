@@ -1,0 +1,14 @@
+[
+xmin 6
+ymin 16
+xmax 526
+ymax 296
+translatex -18
+][
+font 6
+height 300
+color #ffffff
+y 280
+spacingpair "L" "3" 1
+spacingpair "3" "" 1
+]L3

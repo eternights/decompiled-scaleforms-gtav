@@ -1,0 +1,19 @@
+[
+xmin -40
+ymin -40
+xmax 22177
+ymax 804
+wordwrap 1
+multiline 1
+readonly 1
+html 1
+useoutlines 1
+font 118
+height 500
+color #ff000000
+align right
+leftmargin 0
+rightmargin 0
+indent 0
+leading 40
+]<p align="right"><font face="$Font2" size="25" color="#000000" letterSpacing="0.000000" kerning="1">This needs to be here</font></p>

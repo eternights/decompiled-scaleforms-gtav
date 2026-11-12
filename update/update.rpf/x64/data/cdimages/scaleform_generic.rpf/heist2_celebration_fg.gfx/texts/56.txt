@@ -1,0 +1,18 @@
+[
+xmin -40
+ymin -40
+xmax 4560
+ymax 12334
+readonly 1
+noselect 1
+html 1
+useoutlines 1
+font 7
+height 11500
+color #ffffffff
+align center
+leftmargin 0
+rightmargin 0
+indent 0
+leading 40
+]<p align="center"><font face="$Font2_cond" size="575" color="#ffffff" letterSpacing="-4.000000" kerning="0">4</font></p>

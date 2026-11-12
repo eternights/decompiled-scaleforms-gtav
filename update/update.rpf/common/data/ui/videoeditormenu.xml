@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CVideoEditorMenuArray>
+  <CVideoEditorMenuItems>
+
+	<Item>
+		<MenuId>MAIN_MENU</MenuId>
+		<columnId>COL_1</columnId>
+		<columnType>COL_TYPE_LIST</columnType>
+		
+	<Option>
+		  <Item> <cTextId>VEUI_NEW</cTextId> <LinkMenuId>NEW_HELP</LinkMenuId> <JumpMenuId>ADD_LIST</JumpMenuId> <TriggerAction>TRIGGER_NEW_BLANK</TriggerAction> <WarningText>VE_NP_SURE</WarningText> </Item>
+		  <Item> <cTextId>VEUI_LOAD</cTextId> <TriggerAction>TRIGGER_CHECK_FOR_PROJECTS</TriggerAction> <LinkMenuId>LOAD_HELP</LinkMenuId> <JumpMenuId>LOAD_FILT_LIST</JumpMenuId> </Item>
+		  <Item> <cTextId>VEUI_DIR_MODE</cTextId> <Context>ONLY_SELECTABLE_DIR_MODE_AVAILABLE</Context> <LinkMenuId>DIR_MODE_HELP</LinkMenuId> <TriggerAction>TRIGGER_DIRECTOR_MODE</TriggerAction> <WarningText>VE_DIR_MODE_SURE</WarningText> </Item>
+		  <Item> <cTextId>VEUI_CLPMGR</cTextId> <TriggerAction>TRIGGER_CHECK_FOR_CLIPS</TriggerAction> <LinkMenuId>CLIP_MGR_HLP</LinkMenuId> <JumpMenuId>CLIP_MGR_FILT_LIST</JumpMenuId> </Item>
+		  <Item> <cTextId>VEUI_GAL</cTextId> <TriggerAction>TRIGGER_CHECK_FOR_VIDEOS</TriggerAction> <LinkMenuId>GALLERY_HELP</LinkMenuId> <JumpMenuId>GALLERY_FILT_LIST</JumpMenuId> </Item>
+		  <Item> <cTextId>VEUI_TUTORIALS</cTextId> <TriggerAction>TRIGGER_TUTORIAL_URL</TriggerAction> <LinkMenuId>TUTORIAL_HELP</LinkMenuId> </Item>
+		  <Item platform="pc_only"> <cTextId>UI_FLOW_EM_QUITWIN_M</cTextId> <TriggerAction>TRIGGER_QUITGAME_CHECK</TriggerAction> <WarningText>UI_FLOW_EM_QUITWIN_W</WarningText> <LinkMenuId>QUIT_GAME_HELP</LinkMenuId> </Item>
+		  <Item> <cTextId>UI_FLOW_EM_QUITLP_M</cTextId> <TriggerAction>TRIGGER_QUIT_TO_MAIN_MENU_CHECK</TriggerAction> <WarningText>UI_FLOW_EM_QUITLP_W</WarningText> <LinkMenuId>QUIT_TO_MAIN_MENU_HELP</LinkMenuId> </Item>
+		  <Item> <cTextId>VEUI_EXIT_TO_GAME</cTextId> <TriggerAction>WANT_TO_EXIT</TriggerAction> <WarningText>VEUI_EXIT_WARN</WarningText> <LinkMenuId>EXIT_TO_GAME_HELP</LinkMenuId> </Item>
+    </Option>
+	</Item>
+
+	<Item>
+		<MenuId>CLIP_MGR_HLP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_CLPMGR</Header> <Body>VEUI_HDR_CLP_MGR_B</Body>  
+		</Content>
+	</Item>
+
+	<Item>
+		<MenuId>GALLERY_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_GAL</Header> <Body>VEUI_HDR_GAL_B</Body>  
+		</Content>
+	</Item>
+
+	<Item>
+		<MenuId>TUTORIAL_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_TUTORIALS</Header> <Body>VEUI_HDR_TUT_B</Body>  
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>GALLERY_FILT_LIST</MenuId>
+		<columnId>COL_1</columnId>
+		<columnType>COL_TYPE_LIST</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		<Option>
+			<Item> 
+				<cTextId>IB_FILT_VID_DATE</cTextId>  
+				<LinkMenuId>VID_NONE_GENERIC</LinkMenuId> 
+				<DependentAction>SORT_BY_DATE</DependentAction> 
+				<JumpMenuId>GALLERY_LIST</JumpMenuId>
+			</Item>
+			<Item> 
+				<cTextId>IB_FILT_VID_NAME</cTextId>  
+				<LinkMenuId>VID_NONE_GENERIC</LinkMenuId> 
+				<DependentAction>SORT_BY_NAME</DependentAction> 
+				<JumpMenuId>GALLERY_LIST</JumpMenuId>
+			</Item>
+			<Item> 
+				<cTextId>IB_FILT_VID_SIZE</cTextId>
+				<LinkMenuId>VID_NONE_GENERIC</LinkMenuId> 
+				<DependentAction>SORT_BY_SIZE</DependentAction> 
+				<JumpMenuId>GALLERY_LIST</JumpMenuId>				
+			</Item>
+			<Item> 
+				<cTextId>IB_FILTER_TODAY</cTextId>  
+				<LinkMenuId>VID_NONE_TODAY</LinkMenuId> 
+				<DependentAction>SORT_BY_TODAY</DependentAction> 
+				<JumpMenuId>GALLERY_LIST</JumpMenuId>
+			</Item>
+			<Item platform="xbox1|xbsx" > 
+				<cTextId>IB_FILTER_OTHER_USERS</cTextId> 
+				<LinkMenuId>VID_NONE_OTHER</LinkMenuId> 
+				<DependentAction>SORT_BY_OTHER_USERS</DependentAction> 
+				<JumpMenuId>GALLERY_LIST</JumpMenuId>				
+			</Item>
+			<Item> 
+				<cTextId>IB_FILT_MARK_DEL</cTextId>
+				<LinkMenuId>VID_NONE_DEL</LinkMenuId> 
+				<DependentAction>SORT_BY_DELETE</DependentAction> 
+				<JumpMenuId>GALLERY_LIST</JumpMenuId>				
+			</Item>
+		</Option>
+	</Item>
+	
+	<Item>
+		<MenuId>VID_NONE_GENERIC</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>CLIP_MGR_FILT_LIST</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_NOVID</Header> <Body>VEUI_NOVID_B</Body>  
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>VID_NONE_TODAY</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>CLIP_MGR_FILT_LIST</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_NOVID</Header> <Body>VEUI_NOVTODAY_B</Body>  
+		</Content>
+	</Item>
+	
+		<Item>
+		<MenuId>VID_NONE_OTHER</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>CLIP_MGR_FILT_LIST</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_NOVID</Header> <Body>VEUI_NOOTHERVIDS_B</Body>  
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>VID_NONE_DEL</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>CLIP_MGR_FILT_LIST</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_NOVID</Header> <Body>VEUI_MARKDELV_B</Body>  
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>GALLERY_LIST</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_LIST</columnType>
+		<columnDataType>COL_DATA_TYPE_LOAD_FILES</columnDataType>
+		<BackMenuId>GALLERY_FILT_LIST</BackMenuId>
+		
+		<Option>
+			<Item>
+			<DependentAction>POPULATE_GALLERY_PREVIEW</DependentAction>
+			<TriggerAction>VIEW_GALLERY_FULLSCREEN</TriggerAction>
+			<LinkMenuId>FILE_PREVIEW</LinkMenuId>
+			</Item>
+		</Option>
+
+	</Item>
+	
+	<Item>
+		<MenuId>LOAD_FILT_LIST</MenuId>
+		<columnId>COL_1</columnId>
+		<columnType>COL_TYPE_LIST</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		<Option>
+			<Item> 
+				<cTextId>IB_FILT_PROJ_DATE</cTextId>  
+				<LinkMenuId>PROJ_NONE_GENERIC</LinkMenuId> 
+				<DependentAction>SORT_BY_DATE</DependentAction> 
+				<JumpMenuId>LOAD_LIST</JumpMenuId>
+			</Item>
+			<Item> 
+				<cTextId>IB_FILT_PROJ_NAME</cTextId>  
+				<LinkMenuId>PROJ_NONE_GENERIC</LinkMenuId> 
+				<DependentAction>SORT_BY_NAME</DependentAction> 
+				<JumpMenuId>LOAD_LIST</JumpMenuId>
+			</Item>
+			<Item> 
+				<cTextId>IB_FILT_PROJ_SIZE</cTextId>
+				<LinkMenuId>PROJ_NONE_GENERIC</LinkMenuId> 
+				<DependentAction>SORT_BY_SIZE</DependentAction> 
+				<JumpMenuId>LOAD_LIST</JumpMenuId>				
+			</Item>
+			<Item> 
+				<cTextId>IB_FILTER_TODAY</cTextId>  
+				<LinkMenuId>PROJ_NONE_TODAY</LinkMenuId> 
+				<DependentAction>SORT_BY_TODAY</DependentAction> 
+				<JumpMenuId>LOAD_LIST</JumpMenuId>
+			</Item>
+			<Item platform="ps4|ps5|xbox1|xbsx" > 
+				<cTextId>IB_FILTER_OTHER_USERS</cTextId> 
+				<LinkMenuId>PROJ_NONE_OTHER</LinkMenuId> 
+				<DependentAction>SORT_BY_OTHER_USERS</DependentAction> 
+				<JumpMenuId>LOAD_LIST</JumpMenuId>				
+			</Item>
+			<Item> 
+				<cTextId>IB_FILT_MARK_DEL</cTextId>
+				<LinkMenuId>PROJ_NONE_DEL</LinkMenuId> 
+				<DependentAction>SORT_BY_DELETE</DependentAction> 
+				<JumpMenuId>LOAD_LIST</JumpMenuId>				
+			</Item>
+		</Option>
+	</Item>
+	
+	<Item>
+		<MenuId>LOAD_LIST</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_LIST</columnType>
+		<columnDataType>COL_DATA_TYPE_LOAD_FILES</columnDataType>
+		<BackMenuId>LOAD_FILT_LIST</BackMenuId>
+		
+		<Option>
+			<Item> <TriggerAction>TRIGGER_LOAD</TriggerAction> <DependentAction>POPULATE_LOAD_PREVIEW</DependentAction> <WarningText>VE_LOAD_SURE</WarningText> <JumpMenuId>ADD_LIST</JumpMenuId> <LinkMenuId>FILE_PREVIEW</LinkMenuId> </Item>
+		</Option>
+	</Item>
+	
+	<Item>
+		<MenuId>PROJ_NONE_GENERIC</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>CLIP_MGR_FILT_LIST</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_NOPROJ</Header> <Body>VEUI_NOPROJ_B</Body>  
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>PROJ_NONE_TODAY</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>CLIP_MGR_FILT_LIST</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_NOPROJ</Header> <Body>VEUI_NOPTODAY_B</Body>  
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>PROJ_NONE_OTHER</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>CLIP_MGR_FILT_LIST</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_NOPROJ</Header> <Body>VEUI_NOOTHERPROJ_B</Body>  
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>PROJ_NONE_DEL</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>CLIP_MGR_FILT_LIST</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_NOPROJ</Header> <Body>VEUI_MARKDELP_B</Body>  
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>CLIP_MGR_FILT_LIST</MenuId>
+		<columnId>COL_1</columnId>
+		<columnType>COL_TYPE_LIST</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+
+		<Option>
+			<Item> 
+				<cTextId>IB_FILT_CLIP_DATE</cTextId>  
+				<LinkMenuId>CLIP_NONE_GENERIC</LinkMenuId> 
+				<DependentAction>SORT_BY_DATE</DependentAction> 
+				<JumpMenuId>CLIP_MGR_LIST</JumpMenuId>
+			</Item>
+			<Item> 
+				<cTextId>IB_FILT_CLIP_NAME</cTextId>  
+				<LinkMenuId>CLIP_NONE_GENERIC</LinkMenuId> 
+				<DependentAction>SORT_BY_NAME</DependentAction> 
+				<JumpMenuId>CLIP_MGR_LIST</JumpMenuId>
+			</Item>
+			<Item> 
+				<cTextId>IB_FILT_CLIP_SIZE</cTextId>
+				<LinkMenuId>CLIP_NONE_GENERIC</LinkMenuId> 
+				<DependentAction>SORT_BY_SIZE</DependentAction> 
+				<JumpMenuId>CLIP_MGR_LIST</JumpMenuId>				
+			</Item>
+			<Item> 
+				<cTextId>IB_FILTER_CTODAY</cTextId>  
+				<LinkMenuId>CLIP_NONE_TODAY</LinkMenuId> 
+				<DependentAction>SORT_BY_TODAY</DependentAction> 
+				<JumpMenuId>CLIP_MGR_LIST</JumpMenuId>
+			</Item>
+			<Item> 
+				<cTextId>IB_FILT_PROJU</cTextId>
+				<LinkMenuId>CLIP_NONE_PROU</LinkMenuId> 
+				<DependentAction>SORT_BY_IN_PROJECT</DependentAction> 
+				<JumpMenuId>CLIP_MGR_LIST</JumpMenuId>				
+			</Item>
+			<Item platform="ps4|ps5|xbox1|xbsx" > 
+				<cTextId>IB_FILTER_OTHER_USERS</cTextId> 
+				<LinkMenuId>CLIP_NONE_OTHER</LinkMenuId> 
+				<DependentAction>SORT_BY_OTHER_USERS</DependentAction> 
+				<JumpMenuId>CLIP_MGR_LIST</JumpMenuId>				
+			</Item>
+			<Item> 
+				<cTextId>IB_FILT_FAV</cTextId>
+				<LinkMenuId>CLIP_NONE_FAV</LinkMenuId> 
+				<DependentAction>SORT_BY_FAV</DependentAction> 
+				<JumpMenuId>CLIP_MGR_LIST</JumpMenuId>				
+			</Item>
+			<Item> 
+				<cTextId>IB_FILT_MARK_DEL</cTextId>
+				<LinkMenuId>CLIP_NONE_DELETE</LinkMenuId> 
+				<DependentAction>SORT_BY_DELETE</DependentAction> 
+				<JumpMenuId>CLIP_MGR_LIST</JumpMenuId>				
+			</Item>
+		</Option>
+	</Item>
+
+	<Item>
+		<MenuId>CLIP_MGR_LIST</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_LIST</columnType>
+		<columnDataType>COL_DATA_TYPE_LOAD_FILES</columnDataType>
+		<BackMenuId>CLIP_MGR_FILT_LIST</BackMenuId>
+		
+		<Option>
+			<Item> <TriggerAction>TRIGGER_PREVIEW_CLIP</TriggerAction> <DependentAction>POPULATE_CLIP_PREVIEW</DependentAction> <WarningText>VE_PREVIEW_CLIP</WarningText> <LinkMenuId>FILE_PREVIEW</LinkMenuId> </Item>
+		</Option>
+	</Item>
+	
+	<Item>
+		<MenuId>CLIP_NONE_GENERIC</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>CLIP_MGR_FILT_LIST</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_NOCLIPS</Header> <Body>VEUI_NOCLIPS_B</Body>  
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>CLIP_NONE_TODAY</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>CLIP_MGR_FILT_LIST</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_NOCLIPS</Header> <Body>VEUI_NOCTODAY_B</Body>  
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>CLIP_NONE_OTHER</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>CLIP_MGR_FILT_LIST</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_NOCLIPS</Header> <Body>VEUI_NOOTHERCLIPS_B</Body>  
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>CLIP_NONE_DELETE</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>CLIP_MGR_FILT_LIST</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_NOCLIPS</Header> <Body>VEUI_MARKDELC_B</Body>  
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>CLIP_NONE_FAV</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>CLIP_MGR_FILT_LIST</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_NOCLIPS</Header> <Body>VEUI_NOFAV_B</Body>  
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>CLIP_NONE_PROU</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>CLIP_MGR_FILT_LIST</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_NOCLIPS</Header> <Body>VEUI_NOPRU_B</Body>  
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>CLIP_FILT_LIST</MenuId>
+		<columnId>COL_1</columnId>
+		<columnType>COL_TYPE_LIST</columnType>
+		<BackMenuId>ADD_LIST</BackMenuId>
+		
+		<Option>
+			<Item> 
+				<cTextId>IB_FILT_CLIP_DATE</cTextId>  
+				<LinkMenuId>CLIP_NONE_GENERIC</LinkMenuId> 
+				<DependentAction>SORT_BY_DATE</DependentAction> 
+				<JumpMenuId>CLIP_LIST</JumpMenuId>
+			</Item>
+			<Item> 
+				<cTextId>IB_FILT_CLIP_NAME</cTextId>  
+				<LinkMenuId>CLIP_NONE_GENERIC</LinkMenuId> 
+				<DependentAction>SORT_BY_NAME</DependentAction> 
+				<JumpMenuId>CLIP_LIST</JumpMenuId>
+			</Item>
+			<Item> 
+				<cTextId>IB_FILT_CLIP_SIZE</cTextId>
+				<LinkMenuId>CLIP_NONE_GENERIC</LinkMenuId> 
+				<DependentAction>SORT_BY_SIZE</DependentAction> 
+				<JumpMenuId>CLIP_LIST</JumpMenuId>				
+			</Item>
+			<Item> 
+				<cTextId>IB_FILTER_CTODAY</cTextId>  
+				<LinkMenuId>CLIP_NONE_TODAY</LinkMenuId> 
+				<DependentAction>SORT_BY_TODAY</DependentAction> 
+				<JumpMenuId>CLIP_LIST</JumpMenuId>
+			</Item>
+			<Item> 
+				<cTextId>IB_FILT_PROJU</cTextId>
+				<LinkMenuId>CLIP_NONE_PROU</LinkMenuId> 
+				<DependentAction>SORT_BY_IN_PROJECT</DependentAction> 
+				<JumpMenuId>CLIP_LIST</JumpMenuId>				
+			</Item>
+			<Item> 
+				<cTextId>IB_FILT_FAV</cTextId>
+				<LinkMenuId>CLIP_NONE_FAV</LinkMenuId> 
+				<DependentAction>SORT_BY_FAV</DependentAction> 
+				<JumpMenuId>CLIP_LIST</JumpMenuId>				
+			</Item>
+			<!--<Item> 
+				<cTextId>IB_FILT_MARK_DEL</cTextId>
+				<LinkMenuId>CLIP_NONE_DELETE</LinkMenuId> 
+				<DependentAction>SORT_BY_DELETE</DependentAction> 
+				<JumpMenuId>CLIP_LIST</JumpMenuId>				
+			</Item>-->
+		</Option>
+	</Item>
+	
+	<Item>
+		<MenuId>CLIP_LIST</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_LIST</columnType>
+		<columnDataType>COL_DATA_TYPE_LOAD_FILES</columnDataType>
+		<BackMenuId>CLIP_FILT_LIST</BackMenuId>
+		
+		<Option>
+			<Item> <TriggerAction>TRIGGER_ADD_CLIP</TriggerAction> <DependentAction>POPULATE_CLIP_PREVIEW</DependentAction> <LinkMenuId>FILE_PREVIEW</LinkMenuId> </Item>
+		</Option>
+	</Item>
+	
+	<Item>
+		<MenuId>AMBIENT_LIST</MenuId>
+		<columnId>COL_1</columnId>
+		<columnType>COL_TYPE_LIST</columnType>
+		<columnDataType>COL_DATA_TYPE_AUDIO_LIST</columnDataType>
+		<BackMenuId>ADD_LIST</BackMenuId>
+		
+		<Option>
+			<Item> <LinkMenuId>AMBIENT_TRACK_LIST</LinkMenuId> <DependentAction>POPULATE_AMBIENT_PREVIEW</DependentAction> <JumpMenuId>AMBIENT_TRACK_LIST</JumpMenuId> </Item>
+		</Option>
+	</Item>
+	
+	<Item>
+		<MenuId>AMBIENT_TRACK_LIST</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_LIST_LONG_AUDIO</columnType>
+		<columnDataType>COL_DATA_TYPE_AUDIO_LIST</columnDataType>
+		<BackMenuId>AMBIENT_LIST</BackMenuId>
+		
+		<Option>
+			<Item> <TriggerAction>TRIGGER_ADD_AMBIENT_TRACK</TriggerAction> <DependentAction>POPULATE_AMBIENT_PREVIEW</DependentAction> </Item>
+		</Option>
+	</Item>
+	
+	<Item>
+		<MenuId>RADIO_STATION_LIST</MenuId>
+		<columnId>COL_1</columnId>
+		<columnType>COL_TYPE_LIST</columnType>
+		<columnDataType>COL_DATA_TYPE_AUDIO_LIST</columnDataType>
+		<BackMenuId>ADD_LIST</BackMenuId>
+		
+		<Option>
+			<Item> <LinkMenuId>RADIO_TRACK_LIST</LinkMenuId> <DependentAction>POPULATE_RADIO_STATION_PREVIEW</DependentAction> <JumpMenuId>RADIO_TRACK_LIST</JumpMenuId> </Item>
+		</Option>
+	</Item>
+	
+	<Item>
+		<MenuId>RADIO_TRACK_LIST</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_LIST_LONG_AUDIO</columnType>
+		<columnDataType>COL_DATA_TYPE_AUDIO_LIST</columnDataType>
+		<BackMenuId>RADIO_STATION_LIST</BackMenuId>
+		
+		<Option>
+			<Item> <TriggerAction>TRIGGER_ADD_RADIO_TRACK</TriggerAction> <DependentAction>POPULATE_RADIO_STATION_PREVIEW</DependentAction> </Item>
+		</Option>
+	</Item>
+
+	<Item>
+		<MenuId>SCORE_LIST</MenuId>
+		<columnId>COL_1</columnId>
+		<columnType>COL_TYPE_LIST</columnType>
+		<columnDataType>COL_DATA_TYPE_AUDIO_LIST</columnDataType>
+		<BackMenuId>ADD_LIST</BackMenuId>
+		
+		<Option>
+			<Item> <LinkMenuId>SCORE_TRACK_LIST</LinkMenuId> <DependentAction>POPULATE_SCORE_PREVIEW</DependentAction> <JumpMenuId>SCORE_TRACK_LIST</JumpMenuId> </Item>
+		</Option>
+	</Item>
+	
+		<Item>
+		<MenuId>SCORE_TRACK_LIST</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_LIST_LONG_AUDIO</columnType>
+		<columnDataType>COL_DATA_TYPE_AUDIO_LIST</columnDataType>
+		<BackMenuId>SCORE_LIST</BackMenuId>
+		
+		<Option>
+			<Item> <TriggerAction>TRIGGER_ADD_SCORE_TRACK</TriggerAction> <DependentAction>POPULATE_SCORE_PREVIEW</DependentAction> </Item>
+		</Option>
+	</Item>
+	
+	<Item>
+		<MenuId>LOAD_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_HDR_LOAD</Header> <Body>VEUI_HDR_LOAD_B</Body>  
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>ADD_CLIP_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_ADD_CLIP</Header> <Body>VEUI_HDR_ADDCLIP_B</Body>  
+		</Content>
+	</Item>
+
+	<Item>
+		<MenuId>ADD_TEXT_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_ADD_TEXT</Header> <Body>VEUI_HDR_ADDTEXT_B</Body>  
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>QUIT_TO_MAIN_MENU_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		
+		<Content>
+			<Header>UI_FLOW_EM_QUITLP</Header> 
+			<Body>UI_FLOW_EM_QUITLP_D</Body>  
+		</Content>
+	</Item>
+
+	<Item>
+		<MenuId>EXIT_TO_MAIN_MENU_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_EXIT</Header> <Body>VEUI_HDR_EXIT_B</Body>  
+		</Content>
+	</Item>
+
+	<Item>
+		<MenuId>EXIT_TO_GAME_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_EXIT_TO_GAME</Header> <Body>VEUI_EXIT_TO_GAME_B</Body>  
+		</Content>
+	</Item>
+
+	<Item>
+		<MenuId>EXIT_TO_GAME_HELP_ALT</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_EXIT_TO_SP</Header> <Body>VEUI_EXIT_TO_SP_B</Body>  
+		</Content>
+	</Item>
+
+  <Item>
+    <MenuId>QUIT_GAME_HELP</MenuId>
+    <columnId>COL_2</columnId>
+    <columnType>COL_TYPE_BASIC_PAGE</columnType>
+    <BackMenuId>MAIN_MENU</BackMenuId>
+
+    <Content>
+      <Header>UI_FLOW_EM_QUITWIN</Header>
+      <Body>UI_FLOW_EM_QUITWIN_D</Body>
+    </Content>
+  </Item>
+
+  <Item>
+    <MenuId>QUIT_GAME_HELP</MenuId>
+    <columnId>COL_2</columnId>
+    <columnType>COL_TYPE_BASIC_PAGE</columnType>
+    <BackMenuId>MAIN_MENU</BackMenuId>
+
+    <Content>
+      <Header>VEUI_QUIT_GAME</Header>
+      <Body>VEUI_QUIT_GAME_B</Body>
+    </Content>
+  </Item>
+
+  <Item>
+    <MenuId>EXIT_TO_GAME_HELP_ALT</MenuId>
+    <columnId>COL_2</columnId>
+    <columnType>COL_TYPE_BASIC_PAGE</columnType>
+    <BackMenuId>MAIN_MENU</BackMenuId>
+
+    <Content>
+      <Header>VEUI_EXIT_TO_SP</Header>
+      <Body>VEUI_EXIT_TO_SP_B</Body>
+    </Content>
+  </Item>
+
+	<Item>
+		<MenuId>ADD_AMBIENT_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_ADD_AMBIENT</Header> <Body>VEUI_HDR_ADDAMBIENT_B</Body>  
+		</Content>
+	</Item>
+  
+	<Item>
+		<MenuId>ADD_RADIO_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_ADD_RADIO</Header> <Body>VEUI_HDR_ADDRADIO_B</Body>  
+		</Content>
+	</Item>
+
+	<Item>
+		<MenuId>ADD_SCORE_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+	
+		<Content>
+			<Header>VEUI_ADD_SCORE</Header> <Body>VEUI_HDR_ADDSCORE_B</Body>  
+		</Content>
+	</Item>
+
+	<Item>
+		<MenuId>LENGTH_SEL_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_LENGTH_SEL</Header> <Body>VEUI_HDR_LEN_SEL_B</Body>
+		</Content>
+	</Item>
+
+	<Item>
+		<MenuId>FULLSCR_PREV_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_FS_PREV</Header> <Body>VEUI_FS_PREV_B</Body>  
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>SAVE_PROJ_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_SAVE</Header> <Body>VEUI_HDR_SAVE_B</Body>  
+		</Content>
+	</Item>
+
+	<Item>
+		<MenuId>SAVEAS_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		
+		<Content>
+			<Header>VEUI_SAVE_AS</Header> <Body>VEUI_HDR_SAVEAS_B</Body>  
+		</Content>
+	</Item>
+
+	<Item>
+		<MenuId>FILE_PREVIEW</MenuId>
+		<columnId>COL_3</columnId>
+		<columnType>COL_TYPE_LOAD_PROJ_INFO</columnType>
+	</Item>
+
+	<Item>
+		<MenuId>NEW_BLANK_DETAIL_SHORT</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		
+		<Content>
+			<Header>VEUI_NEW_SHORT</Header> <Body>VEUI_NEW_SHORT_B</Body> 
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>NEW_BLANK_DETAIL_EPISODE</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		
+		<Content>
+			<Header>VEUI_NEW_EPISODE</Header> <Body>VEUI_NEW_EPISODE_B</Body> 
+		</Content>
+	</Item>
+
+
+	<Item>
+		<MenuId>NEW_BLANK_DETAIL_EPIC</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		
+		<Content>
+			<Header>VEUI_NEW_EPIC</Header> <Body>VEUI_NEW_EPIC_B</Body> 
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>NEW_BLANK_DETAIL_BLANK</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		
+		<Content>
+			<Header>VEUI_NEW_BLANK</Header> <Body>VEUI_NEW_BLANK_B</Body> 
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>ADD_LIST</MenuId>
+		<columnId>COL_1</columnId>
+		<columnType>COL_TYPE_LIST</columnType>
+		<BackMenuId>MAIN_MENU</BackMenuId>
+		
+		<Option>
+		  <Item> <cTextId>VEUI_ADD_CLIP</cTextId> <TriggerAction>TRIGGER_CHECK_FOR_CLIPS</TriggerAction> <LinkMenuId>ADD_CLIP_HELP</LinkMenuId> <JumpMenuId>CLIP_FILT_LIST</JumpMenuId> </Item>
+  		  <Item> <cTextId>VEUI_ADD_AMBIENT</cTextId> <Context>ONLY_SELECTABLE_WITH_CLIPS</Context> <TriggerAction>TRIGGER_DISP_AMB_ICON</TriggerAction> <LinkMenuId>ADD_AMBIENT_HELP</LinkMenuId> <JumpMenuId>AMBIENT_LIST</JumpMenuId> </Item>
+  		  <Item> <cTextId>VEUI_ADD_RADIO</cTextId> <Context>ONLY_SELECTABLE_WITH_CLIPS</Context> <TriggerAction>TRIGGER_DISP_AUD_ICON</TriggerAction> <LinkMenuId>ADD_RADIO_HELP</LinkMenuId> <JumpMenuId>RADIO_STATION_LIST</JumpMenuId> </Item>
+		  <Item> <cTextId>VEUI_ADD_SCORE</cTextId> <Context>ONLY_SELECTABLE_WITH_CLIPS</Context> <TriggerAction>TRIGGER_DISP_SCORE_ICON</TriggerAction> <LinkMenuId>ADD_SCORE_HELP</LinkMenuId> <JumpMenuId>SCORE_LIST</JumpMenuId> </Item>
+		  <Item> <cTextId>VEUI_ADD_TEXT</cTextId> <Context>ONLY_SELECTABLE_WITH_CLIPS</Context> <TriggerAction>TRIGGER_NEW_TEXT</TriggerAction> <LinkMenuId>ADD_TEXT_HELP</LinkMenuId> <JumpMenuId>TEXT_SELECTION_ORIGINAL</JumpMenuId> </Item>
+		  <Item> <cTextId>VEUI_FS_PREV</cTextId> <Context>ONLY_SELECTABLE_WITH_CLIPS</Context> <LinkMenuId>FULLSCR_PREV_HELP</LinkMenuId> <TriggerAction>TRIGGER_FULLSCREEN_PREVIEW</TriggerAction> <WarningText>VE_PREV_SURE</WarningText> </Item>
+		  <Item> <cTextId>VEUI_SAVE_AS</cTextId> <Context>ONLY_SELECTABLE_WITH_CLIPS</Context> <LinkMenuId>SAVEAS_HELP</LinkMenuId> <TriggerAction>TRIGGER_RENAME_PROJECT</TriggerAction> </Item>
+		  <Item> <cTextId>VEUI_SAVE</cTextId> <Context>ONLY_SELECTABLE_WITH_CLIPS</Context> <LinkMenuId>SAVE_PROJ_HELP</LinkMenuId> <TriggerAction>TRIGGER_SAVE</TriggerAction> <WarningText>VE_SV_SURE</WarningText> </Item>
+		  <Item platform="pc_only"> <cTextId>VEUI_PUB</cTextId> <Context>ONLY_SELECTABLE_WITH_CLIPS</Context> <LinkMenuId>PUBLISH_HELP</LinkMenuId> <JumpMenuId>EXPORT_SETTINGS</JumpMenuId></Item>
+		  <Item platform="!pc_only"> <cTextId>VEUI_PUB</cTextId> <Context>ONLY_SELECTABLE_WITH_CLIPS</Context> <LinkMenuId>PUBLISH_HELP</LinkMenuId> <TriggerAction>TRIGGER_EXP_SIZECHECK</TriggerAction></Item>
+		  <Item> <cTextId>VEUI_EXIT</cTextId> <TriggerAction>TRIGGER_EXIT_CHECK</TriggerAction> <WarningText>VEUI_EXIT_MAIN_MENU</WarningText> <LinkMenuId>EXIT_TO_MAIN_MENU_HELP</LinkMenuId> </Item>
+		  <Item> <cTextId>VEUI_TUT_ADDCLIP</cTextId> <Context>FORCED_TUTORIAL_NO_CLIPS</Context></Item>
+		 </Option>
+	</Item>
+	
+	<Item>
+		<MenuId>EXPORT_SETTINGS</MenuId>
+		<columnId>COL_1</columnId>
+		<columnType>COL_TYPE_LIST</columnType>
+		<BackMenuId>ADD_LIST</BackMenuId>
+
+		<Option>
+		  <Item> <cTextId>VEUI_EXPORT_FPS</cTextId> <LinkMenuId>PUBLISH_HELP_SETTINGS</LinkMenuId> <ToggleValue>TOGGLE_EXPORT_FPS</ToggleValue> </Item>
+		  <Item> <cTextId>VEUI_EXPORT_QUALITY</cTextId> <LinkMenuId>PUBLISH_HELP_SETTINGS</LinkMenuId> <ToggleValue>TOGGLE_EXPORT_QUALITY</ToggleValue> </Item>
+		  <Item> <cTextId>VEUI_EXPORT_CONFIRM</cTextId> <LinkMenuId>PUBLISH_HELP_SETTINGS</LinkMenuId> <TriggerAction>TRIGGER_EXP_SIZECHECK</TriggerAction> </Item>
+		 </Option>
+	</Item>
+	
+	<Item>
+		<MenuId>TEXT_SELECTION_ORIGINAL</MenuId>
+		<columnId>COL_1</columnId>
+		<columnType>COL_TYPE_LIST</columnType>
+		<BackMenuId>ADD_LIST</BackMenuId>
+		
+		<Option>
+		  <Item> <cTextId>VEUI_TEXT_STRING</cTextId> <Context>ONLY_VALID_TEMPLATE</Context> <UniqueId>TEXT</UniqueId> <LinkMenuId>TEXT_PREVIEW</LinkMenuId> <TriggerAction>TRIGGER_ENTER_TEXT</TriggerAction> </Item>
+		  <Item> <cTextId>VEUI_TEXT_POS_SIZE</cTextId> <Context>ONLY_SELECTABLE_TEXT_ADDED</Context> <LinkMenuId>TEXT_PREVIEW</LinkMenuId> <TriggerAction>TRIGGER_ADJUST_TEXT_POS_SIZE</TriggerAction> </Item>
+		  <Item> <cTextId>VEUI_TEXT_COLOR</cTextId> <Context>ONLY_SELECTABLE_TEXT_ADDED</Context> <UniqueId>COLOR</UniqueId> <LinkMenuId>TEXT_PREVIEW</LinkMenuId> <ToggleValue>TOGGLE_TEXT_COLOR</ToggleValue> </Item>
+		  <Item> <cTextId>VEUI_TEXT_FONT</cTextId> <Context>ONLY_SELECTABLE_TEXT_ADDED</Context> <UniqueId>FONT</UniqueId> <LinkMenuId>TEXT_PREVIEW</LinkMenuId> <ToggleValue>TOGGLE_TEXT_FONT</ToggleValue> </Item>
+		  <Item> <cTextId>VEUI_TEXT_OPACITY</cTextId> <Context>ONLY_SELECTABLE_TEXT_ADDED</Context> <LinkMenuId>TEXT_PREVIEW</LinkMenuId> <ToggleValue>TOGGLE_TEXT_OPACITY</ToggleValue> </Item>
+	  	  <Item> <cTextId>VEUI_TEXT_DURATION</cTextId> <Context>ONLY_SELECTABLE_TEXT_ADDED</Context> <LinkMenuId>TEXT_PREVIEW</LinkMenuId> <ToggleValue>TOGGLE_TEXT_DURATION</ToggleValue> </Item>
+
+		  <Item> <cTextId>VEUI_CONFIRM</cTextId> <Context>ONLY_SELECTABLE_TEXT_ADDED</Context> <LinkMenuId>TEXT_PREVIEW</LinkMenuId> <TriggerAction>TRIGGER_ADD_TEXT</TriggerAction> </Item>
+		 </Option>
+	</Item>
+	
+	<Item>
+		<MenuId>TEXT_PREVIEW</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_TEXT_PLACEMENT</columnType>
+		<BackMenuId>ADD_LIST</BackMenuId>
+	</Item>
+
+	<Item>
+		<MenuId>NEW_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		
+		<Content>
+			<Header>VEUI_NEW_HELP_H</Header> <Body>VEUI_NEW_HELP_B</Body>  
+		</Content>
+	</Item>
+
+	<Item>
+		<MenuId>DIR_MODE_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		
+		<Content>
+			<Header>VEUI_DIR_MODE</Header> <Body>VEUI_DIR_MODE_HELP_B</Body>  
+		</Content>
+	</Item>
+
+	<Item>
+		<MenuId>DIR_MODE_HELP_ALT</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		
+		<Content>
+			<Header>VEUI_DIR_MODE</Header> <Body>VEUI_DIR_MODE_HELP_ALT_B</Body>  
+		</Content>
+	</Item>
+
+	<Item>
+		<MenuId>PUBLISH_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		
+		<Content>
+			<Header>VEUI_PUB</Header> <Body>VEUI_PUBLISH_B</Body>
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>PUBLISH_HELP_SETTINGS</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		
+		<Content>
+			<Header>VEUI_PUB</Header> <Body>VEUI_PUBLISH_B_SETTINGS</Body>
+		</Content>
+	</Item>
+	
+	<Item>
+		<MenuId>PUBLISH_UNAVAIL_HELP</MenuId>
+		<columnId>COL_2</columnId>
+		<columnType>COL_TYPE_BASIC_PAGE</columnType>
+		
+		<Content>
+			<Header>VEUI_PUB</Header> <Body>VEUI_PUBLISH_UNAVAIL_B</Body>  
+		</Content>
+	</Item>
+
+  </CVideoEditorMenuItems>
+
+    <CVideoEditorErrorMessages>
+		<Item> <type>FAILED_TO_CREATE_PROJECT</type> <header>VEUI_HDR_FAILED</header> <body>VEUI_ERR_FAILED_PROJ</body> </Item>
+		<Item> <type>FAILED_TO_LOAD_PROJECT</type> <header>VEUI_HDR_FAILED</header> <body>VEUI_ERR_FAILED_LOADPROJ</body> </Item>
+		<Item> <type>FAILED_TO_SAVE_PROJECT</type> <header>VEUI_HDR_FAILED</header> <body>VEUI_ERR_FAILED_SAVEPROJ</body> </Item>
+		<Item> <type>FAILED_TO_PLAY_VIDEO</type> <header>VEUI_HDR_FAILED</header> <body>VEUI_ERR_FAILED_PLAYVID</body> </Item>
+		<Item> <type>FAILED_TO_INPUT_TEXT</type> <header>VEUI_HDR_FAILED</header> <body>VEUI_ERR_FAILED_TEXTINPUT</body> </Item>
+		<Item> <type>FAILED_TO_PREVIEW_CLIP</type> <header>VEUI_HDR_FAILED</header> <body>VEUI_ERR_FAILED_CLIPRV</body> </Item>
+		<Item> <type>FAILED_TO_ADD_CLIP</type> <header>VEUI_HDR_FAILED</header> <body>VEUI_ERR_FAILED_CLIPAD</body> </Item>
+		<Item> <type>FAILED_AUD_NO_CLIPS</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_ERR_FAILED_NOCLIPS_AUD</body> </Item>
+		<Item> <type>FAILED_TEXT_NO_CLIPS</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_ERR_FAILED_NOCLIPS_TEXT</body> </Item>
+		<Item> <type>FAILED_NO_CLIPS_ADD</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_ERR_NO_CLIPS_ADD</body> </Item>
+		<Item> <type>FAILED_NO_CLIPS_NEW</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_ERR_NO_CLIPS_NEW</body> </Item>
+		<Item> <type>FAILED_NO_CLIPS_MGR</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_ERR_NO_CLIPS_MGR</body> </Item>
+		<Item> <type>FAILED_NO_PROJECTS</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_ERR_NO_PROJECTS</body> </Item>
+		<Item> <type>FAILED_NO_VIDEOS</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_ERR_NO_VIDEOS</body> </Item>
+		<Item> <type>FAILED_TO_INPUT_FILENAME</type> <header>VEUI_HDR_FAILED</header> <body>VEUI_ERR_FAILED_FILENAME</body> </Item>
+		<Item> <type>FAILED_NO_TEXT</type> <header>VEUI_HDR_FAILED</header> <body>VEUI_ERR_FAILED_NO_TEXT</body> </Item>
+		<Item> <type>PROFANITY_FILT_UNAVAIL</type> <header>VEUI_HDR_ALERT</header> <body>UEUI_PROF_FILT_UN</body> </Item>
+		<Item> <type>PROFANITY_FILT_UNAVAIL_TEXT</type> <header>VEUI_HDR_ALERT</header> <body>UEUI_PROF_FILT_UN_TEXT</body> </Item>
+		<Item> <type>PROFANITY_FILT_UNAVAIL_EXP</type> <header>VEUI_HDR_ALERT</header> <body>UEUI_PROF_FILT_UN_FILETEXT</body> </Item>
+		<Item> <type>TITLE_PROFANITY_FAIL</type> <header>VEUI_HDR_ALERT</header> <body>ERROR_FAILEDPROFANITY</body> </Item>
+		<Item> <type>FAILED_CHARS_TEXT</type> <header>VEUI_HDR_FAILED</header> <body>VEUI_ERR_FAILED_CHAR_TEXT</body> </Item>
+		<Item> <type>CLIP_LOAD_FAIL</type> <header>VEUI_HDR_FAILED</header> <body>VEUI_LOAD_FAIL</body> </Item>
+		<Item> <type>CLIP_DELETE</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_DEL_CLIP</body> </Item>
+		<Item> <type>PROJ_DELETE</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_DEL_PROJ</body> </Item>
+		<Item> <type>VID_DELETE</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_DEL_VID</body> </Item>
+		<Item> <type>CLIP_DELETE_USED</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_DEL_CLIPU</body> </Item>
+		<Item> <type>DELETE_FAILED</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_DEL_FAIL</body> </Item>
+		<Item> <type>MULTI_DELETE_FAILED</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_DEL_MULTI_FAIL</body> </Item>
+		<Item> <type>TOO_MANY_PROJECTS_SAVE_AS</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_PROJ_FULL_SA</body> </Item>
+		<Item> <type>NO_SPACE_FOR_PROJECTS_SAVE_AS</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_PROJ_NOSPACE</body> </Item>
+		<Item> <type>TOO_MANY_PROJECTS</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_PROJ_FULL</body> </Item>
+		<Item> <type>NO_SPACE_FOR_PROJECTS</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_PROJ_NOSPACE</body> </Item>
+		<Item> <type>NO_SPACE_FOR_PROJECTS_SAVE</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_PROJ_NOSPACE_S</body> </Item>
+		<Item> <type>MAX_CLIPS_IN_PROJ</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_PROJ_CLIP_FULL</body> </Item>
+		<Item> <type>MAX_TEXT_IN_PROJ</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_PROJ_TEXT_FULL</body> </Item>
+		<Item> <type>MAX_MUSIC_IN_PROJ</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_PROJ_MUSIC_FULL</body> </Item>
+		<Item> <type>CLIP_DELETED_FROM_DISK</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_CLIP_DELETED_DISK</body> </Item>
+		<Item> <type>PROJECT_NAME_RESERVED</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_PROJ_NAME_RESERVED</body> </Item>
+		<Item> <type>EXPORT_NAME_RESERVED</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_EXP_NAME_RESERVED</body> </Item>
+		<Item> <type>PROJECT_NAME_CHAR</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_PROJ_NAME_CHAR</body> </Item>
+		<Item> <type>EXPORT_NAME_CHAR</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_EXP_NAME_CHAR</body> </Item>
+		<Item> <type>EXPORT_NAME_PROFANE</type> <header>VEUI_HDR_ALERT</header> <body>ERROR_FAILEDPROFANITY</body> </Item>
+		<Item> <type>PROJECT_NAME_INVALID</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_PROJ_NAME_INVALID</body> </Item>
+		<Item> <type>EXPORT_NAME_INVALID</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_EXP_NAME_INVALID</body> </Item>
+		<Item> <type>PROJECT_NAME_NULL</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_PROJ_NAME_NULL</body> </Item>
+		<Item> <type>EXPORT_NAME_NULL</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_EXP_NAME_NULL</body> </Item>
+    <Item> <type>FILE_NAME_INVALID</type> <header>VEUI_HDR_ALERT</header> <body>VEUI_NAME_INVALID</body> </Item>
+	</CVideoEditorErrorMessages>  
+
+	<CVideoEditorPositioning>
+		<Item> <name>replay_logoscreen</name> <pos_x value="0.5"/> <pos_y value="0.5"/> <size_x value="0.3"/> <size_y value="0.4"/> </Item>
+		<Item> <name>replay_wallpaper</name> <pos_x value="0.0"/> <pos_y value="0.0"/> <size_x value="1.0"/> <size_y value="1.0"/> </Item>
+	</CVideoEditorPositioning>
+	
+</CVideoEditorMenuArray>

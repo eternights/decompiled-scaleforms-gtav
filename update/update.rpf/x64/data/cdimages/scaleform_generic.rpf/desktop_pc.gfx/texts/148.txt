@@ -1,0 +1,20 @@
+[
+xmin -3633
+ymin -40
+xmax 6513
+ymax 477
+multiline 1
+readonly 1
+noselect 1
+wasstatic 1
+html 1
+useoutlines 1
+font 44
+height 340
+color #ff000000
+align center
+leftmargin 0
+rightmargin 0
+indent 0
+leading 0
+]<p align="center"><font face="$Font2" size="17" color="#000000" letterSpacing="0.000000" kerning="0">CLICK HERE NOW FOR 28 DAYS FREE MEMBERSHIP!!!</font></p>

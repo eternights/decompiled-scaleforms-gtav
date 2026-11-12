@@ -1,0 +1,15 @@
+[
+xmin -11
+ymin 17
+xmax 625
+ymax 292
+translatex -76
+][
+font 6
+height 300
+letterspacing 1
+color #000000
+x 40
+y 280
+spacingpair " " "" -1
+]LB 

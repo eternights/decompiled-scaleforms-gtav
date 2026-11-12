@@ -1,0 +1,12 @@
+[
+xmin 66
+ymin 17
+xmax 467
+ymax 292
+translatex 41
+][
+font 6
+height 300
+color #ffffff
+y 280
+]R

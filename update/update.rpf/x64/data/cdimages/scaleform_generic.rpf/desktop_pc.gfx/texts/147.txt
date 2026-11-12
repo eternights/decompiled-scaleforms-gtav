@@ -1,0 +1,20 @@
+[
+xmin -4029
+ymin -40
+xmax 6909
+ymax 306
+multiline 1
+readonly 1
+noselect 1
+wasstatic 1
+html 1
+useoutlines 1
+font 44
+height 205
+color #ff000000
+align center
+leftmargin 0
+rightmargin 0
+indent 0
+leading 0
+]<p align="center"><font face="$Font2" size="10" color="#000000" letterSpacing="0.000000" kerning="0">ASIAN - SWEDISH - RUSSIAN - CAUCASIAN - BLACK - BIG - SMALL - MATURE - LINGERIE - MOVIES</font></p>

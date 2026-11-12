@@ -1,0 +1,29 @@
+[
+xmin 0
+ymin 145
+xmax 14012
+ymax 1865
+][
+font 1
+height 840
+color #000000
+y 840
+spacing "N" 1
+spacing "E" 1
+spacing "D" 1
+spacing "T" 1
+spacing "O" 1
+spacing "H" 1
+spacing "A" 1
+spacing "U" 1
+spacingpair "V" "E" 1
+spacingpair "S" "E" 1
+spacingpair "C" "O" 1
+spacingpair "F" " " 1
+spacingpair "M" "O" 1
+spacingpair "R" "E" 1
+spacingpair " " "" -27
+]NEEDED TO HAVE A USE COUNT OF MORE THAN [
+x 0
+y 1840
+]0[space 1]

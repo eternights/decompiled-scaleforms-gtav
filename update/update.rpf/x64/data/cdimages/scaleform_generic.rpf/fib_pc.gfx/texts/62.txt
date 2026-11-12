@@ -1,0 +1,14 @@
+[
+xmin 3646
+ymin 48
+xmax 5725
+ymax 350
+][
+font 6
+height 360
+color #333333
+x 3620
+y 320
+spacingpair "B" "r" 1
+spacingpair "F" "o" 1
+]Brute Force

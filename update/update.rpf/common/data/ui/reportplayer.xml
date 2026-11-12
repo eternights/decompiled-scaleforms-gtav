@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Temporarily commend out new page flow until flash gets done -->
+<CReportArray v="1.0">
+  <ReportLists>
+  
+  <!-- Root Menu -->
+    <ReportList>
+      <ReportLinkId>ReportLink_ReportRoot</ReportLinkId>
+      <ReportOptions>
+		<ReportOption> <LabelHash>RP_ABUSIVE_COMM</LabelHash> <ReportLink>ReportLink_Reason</ReportLink> <ReportType>ReportType_Communication</ReportType> <SubReportType>ReportSubType_AbusiveCommunication</SubReportType> </ReportOption>
+		<ReportOption> <LabelHash>RP_GAME_EXPLOIT</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportType>ReportType_Cheating</ReportType> <SubReportType>ReportSubType_GlitchingOrAbusingGameFeatures</SubReportType> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXPLOITS</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportType>ReportType_Cheating</ReportType> <SubReportType>ReportSubType_CheatingOrModding</SubReportType> </ReportOption>
+		<ReportOption> <LabelHash>CWS_GRIEFING</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportType>ReportType_Communication</ReportType> <SubReportType>ReportSubType_GriefingOrDisruptiveGameplay</SubReportType> </ReportOption>
+		<ReportOption platform="!pc_only"> <LabelHash>RP_OFFENSIVE_PLAYER_CONTENT</LabelHash> <ReportLink>ReportLink_Reason</ReportLink> <ReportType>ReportType_Ugc</ReportType> <SubReportType>ReportSubType_OffensivePlayerMadeContent</SubReportType> </ReportOption>
+		<ReportOption platform="!pc_only"> <LabelHash>RP_OFFENSIVE_PLAYER_NAME</LabelHash> <ReportLink>ReportLink_PlayerName</ReportLink> <ReportType>ReportType_Ugc</ReportType> <SubReportType>ReportSubType_OffensivePlayerMadeContent</SubReportType> </ReportOption>
+		<ReportOption platform="pc_only"> <LabelHash>RP_OFFENSIVE_PLAYER_NAME_CONTENT</LabelHash> <ReportLink>ReportLink_Reason</ReportLink> <ReportType>ReportType_Ugc</ReportType> <SubReportType>ReportSubType_OffensivePlayerMadeContent</SubReportType> </ReportOption>
+      </ReportOptions>
+    </ReportList>
+	
+	<!-- What abused was experienced -->
+    <ReportList>
+      <ReportLinkId>ReportLink_Reason</ReportLinkId>
+	  <SubtitleHash>RP_ABUSE_EXPERIENCES</SubtitleHash>
+      <ReportOptions>
+        <ReportOption> <LabelHash>RP_EXP_SPAM</LabelHash> <ReportLink>ReportLink_Origin</ReportLink> <ReportReason>ReportReason_SpamAndFraud</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_HARRASSMENT</LabelHash> <ReportLink>ReportLink_Origin</ReportLink> <ReportReason>ReportReason_HarassmentAndBullying</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_DISCRIMINATION</LabelHash> <ReportLink>ReportLink_Origin</ReportLink> <ReportReason>ReportReason_IdentityBasedHateAndDiscrimination</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_PERSONAL_INFO</LabelHash> <ReportLink>ReportLink_Origin</ReportLink> <ReportReason>ReportReason_AskingOrGivingPersonalInformation</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_SELF_HARM</LabelHash> <ReportLink>ReportLink_Origin</ReportLink> <ReportReason>ReportReason_ThreatsOfSuicideOrSelfHarm</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_ILLEGAL_ACTIVITY</LabelHash> <ReportLink>ReportLink_Origin</ReportLink> <ReportReason>ReportReason_IllegalAndRegulatedActivities</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_CHILD_ABUSE</LabelHash> <ReportLink>ReportLink_Origin</ReportLink> <ReportReason>ReportReason_ChildAbuseAndSexualExploitation</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_VIOLENT_EXTREMISN</LabelHash> <ReportLink>ReportLink_Origin</ReportLink> <ReportReason>ReportReason_ViolentExtremism</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP__VIOLENT_CONTENT</LabelHash> <ReportLink>ReportLink_Origin</ReportLink> <ReportReason>ReportReason_VoilentContentAndGore</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_ADULT</LabelHash> <ReportLink>ReportLink_Origin</ReportLink> <ReportReason>ReportReason_AdultNudityAndSexualContent</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_SEX_HARRASSMENT</LabelHash> <ReportLink>ReportLink_Origin</ReportLink> <ReportReason>ReportReason_SexualHarassmentAndThreats</ReportReason> </ReportOption>
+      </ReportOptions>
+    </ReportList>
+	
+	<!-- Where did you experience it -->
+    <ReportList>
+      <ReportLinkId>ReportLink_Origin</ReportLinkId>
+	  <SubtitleHash>RP_ORIGIN</SubtitleHash>
+      <ReportOptions>
+        <ReportOption> <LabelHash>RP_VOICE_CHAT</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportType>ReportType_Communication</ReportType> <ReportOrigin>ReportOrigin_VoiceChat</ReportOrigin> </ReportOption>
+		<ReportOption platform="pc_only"> <LabelHash>RP_GAME_CHAT</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportType>ReportType_Communication</ReportType> <ReportOrigin>ReportOrigin_TextChat</ReportOrigin> </ReportOption>
+		<ReportOption> <LabelHash>RP_APP_CHAT</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportType>ReportType_Communication</ReportType> <ReportOrigin>ReportOrigin_PhoneAppChat</ReportOrigin> </ReportOption>
+		<ReportOption platform="pc_only"> <LabelHash>RP_SC_NAME</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportType>ReportType_Ugc</ReportType> <ReportOrigin>ReportOrigin_MemberNickname</ReportOrigin> </ReportOption>
+		<ReportOption> <LabelHash>RP_CREW_NAME</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportType>ReportType_Ugc</ReportType> <ReportOrigin>ReportOrigin_CrewName</ReportOrigin> </ReportOption>
+		<ReportOption> <LabelHash>RP_CREW_EMBLEM</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportType>ReportType_Ugc</ReportType> <ReportOrigin>ReportOrigin_CrewEmblem</ReportOrigin> </ReportOption>
+		<ReportOption> <LabelHash>RP_CREW_TAG</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportType>ReportType_Ugc</ReportType> <ReportOrigin>ReportOrigin_CrewTag</ReportOrigin> </ReportOption>
+		<ReportOption> <LabelHash>RP_LICENCE</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportType>ReportType_Ugc</ReportType> <ReportOrigin>ReportOrigin_LicensePlates</ReportOrigin> </ReportOption>
+		<ReportOption> <LabelHash>RP_GANG_NAME</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportType>ReportType_Ugc</ReportType> <ReportOrigin>ReportOrigin_BikerGangName</ReportOrigin> </ReportOption>
+		<ReportOption> <LabelHash>RP_ORG_NAME</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportType>ReportType_Ugc</ReportType> <ReportOrigin>ReportOrigin_CeoOrganizationName</ReportOrigin> </ReportOption>
+		<ReportOption> <LabelHash>RP_YACHT_NAME</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportType>ReportType_Ugc</ReportType> <ReportOrigin>ReportOrigin_YachtName</ReportOrigin> </ReportOption>
+      </ReportOptions>
+    </ReportList>
+
+    <!-- Confirmation Menu -->
+    <ReportList>
+      <ReportLinkId>ReportLink_Confirmation</ReportLinkId>
+      <ReportOptions>
+        <ReportOption> <LabelHash>RP_WARNING</LabelHash> <ReportLink>ReportLink_Successful</ReportLink> </ReportOption>
+      </ReportOptions>
+    </ReportList>
+
+    <!-- Confirmation Menu -->
+    <ReportList>
+      <ReportLinkId>ReportLink_Successful</ReportLinkId>
+      <ReportOptions>
+        <ReportOption> <LabelHash>RP_WARNING</LabelHash> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_HARRASSMENT_EXTRA</LabelHash> <ReportReason>ReportReason_HarassmentAndBullying</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_SELF_HARM_EXTRA</LabelHash> <ReportReason>ReportReason_ThreatsOfSuicideOrSelfHarm</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_CHILD_ABUSE_EXTRA</LabelHash> <ReportReason>ReportReason_ChildAbuseAndSexualExploitation</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_SEX_HARRASSMENT_EXTRA</LabelHash> <ReportReason>ReportReason_SexualHarassmentAndThreats</ReportReason> </ReportOption>
+      </ReportOptions>
+    </ReportList>
+
+
+    <!-- Commend menu -->
+    <ReportList>
+      <ReportLinkId>ReportLink_CommendRoot</ReportLinkId>
+      <SubtitleHash>CWS_COMMEND_DESC</SubtitleHash>
+      <ReportOptions>
+        <ReportOption> <LabelHash>CWS_FRIENDLY</LabelHash> <ReportLink>ReportLink_Successful</ReportLink> <ReportType>ReportType_Commend</ReportType> <SubReportType>ReportSubType_Friendly</SubReportType> </ReportOption>
+        <ReportOption> <LabelHash>CWS_HELPFUL</LabelHash> <ReportLink>ReportLink_Successful</ReportLink><ReportType>ReportType_Commend</ReportType> <SubReportType>ReportSubType_Helpful</SubReportType> </ReportOption>
+      </ReportOptions>
+    </ReportList>
+
+    <!-- ReportUGC menu -->
+    <ReportList>
+      <ReportLinkId>ReportLink_UGCReportRoot</ReportLinkId>
+      <SubtitleHash>CWS_REPORTMISSION</SubtitleHash>
+      <ReportOptions>
+      </ReportOptions>
+    </ReportList>
+	
+	<!-- UGC What abused was experienced -->
+    <ReportList>
+      <ReportLinkId>ReportLink_UGCReportReason</ReportLinkId>
+	  <SubtitleHash>RP_ABUSE_EXPERIENCES</SubtitleHash>
+      <ReportOptions>
+		<ReportOption> <LabelHash>RP_GAME_EXPLOIT</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <SubReportType>ReportSubType_GlitchingOrAbusingGameFeatures</SubReportType> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXPLOITS</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <SubReportType>ReportSubType_CheatingOrModding</SubReportType> </ReportOption>
+        <ReportOption> <LabelHash>RP_EXP_SPAM</LabelHash> <ReportLink>ReportLink_UGCReportOrigin</ReportLink> <ReportReason>ReportReason_SpamAndFraud</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_HARRASSMENT</LabelHash> <ReportLink>ReportLink_UGCReportOrigin</ReportLink> <ReportReason>ReportReason_HarassmentAndBullying</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_DISCRIMINATION</LabelHash> <ReportLink>ReportLink_UGCReportOrigin</ReportLink> <ReportReason>ReportReason_IdentityBasedHateAndDiscrimination</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_PERSONAL_INFO</LabelHash> <ReportLink>ReportLink_UGCReportOrigin</ReportLink> <ReportReason>ReportReason_AskingOrGivingPersonalInformation</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_SELF_HARM</LabelHash> <ReportLink>ReportLink_UGCReportOrigin</ReportLink> <ReportReason>ReportReason_ThreatsOfSuicideOrSelfHarm</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_ILLEGAL_ACTIVITY</LabelHash> <ReportLink>ReportLink_UGCReportOrigin</ReportLink> <ReportReason>ReportReason_IllegalAndRegulatedActivities</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_CHILD_ABUSE</LabelHash> <ReportLink>ReportLink_UGCReportOrigin</ReportLink> <ReportReason>ReportReason_ChildAbuseAndSexualExploitation</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_VIOLENT_EXTREMISN</LabelHash> <ReportLink>ReportLink_UGCReportOrigin</ReportLink> <ReportReason>ReportReason_ViolentExtremism</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP__VIOLENT_CONTENT</LabelHash> <ReportLink>ReportLink_UGCReportOrigin</ReportLink> <ReportReason>ReportReason_VoilentContentAndGore</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_ADULT</LabelHash> <ReportLink>ReportLink_UGCReportOrigin</ReportLink> <ReportReason>ReportReason_AdultNudityAndSexualContent</ReportReason> </ReportOption>
+		<ReportOption> <LabelHash>RP_EXP_SEX_HARRASSMENT</LabelHash> <ReportLink>ReportLink_UGCReportOrigin</ReportLink> <ReportReason>ReportReason_SexualHarassmentAndThreats</ReportReason> </ReportOption>
+      </ReportOptions>
+    </ReportList>
+	
+	<!-- UGC Where did you experience it -->
+    <ReportList>
+      <ReportLinkId>ReportLink_UGCReportOrigin</ReportLinkId>
+	  <SubtitleHash>RP_ORIGIN</SubtitleHash>
+      <ReportOptions>
+        <ReportOption> <LabelHash>RP_JOB_COVER_IMAGE</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportOrigin>ReportOrigin_JobCoverImage</ReportOrigin> <SubReportType>ReportSubType_OffensivePlayerMadeContent</SubReportType> </ReportOption>
+		<ReportOption> <LabelHash>RP_JOB_DESCRIPTION</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink>  <ReportOrigin>ReportOrigin_JobDescriptionOrInGameText</ReportOrigin> <SubReportType>ReportSubType_OffensivePlayerMadeContent</SubReportType> </ReportOption>
+		<ReportOption> <LabelHash>RP_IN_GAME_ASSETS</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportOrigin>ReportOrigin_JobInGameAssets</ReportOrigin> <SubReportType>ReportSubType_OffensivePlayerMadeContent</SubReportType> </ReportOption>
+		<ReportOption> <LabelHash>RP_JOB_OTHER</LabelHash> <ReportLink>ReportLink_UGCReportOriginContent</ReportLink> <SubReportType>ReportSubType_OffensivePlayerMadeContent</SubReportType> </ReportOption>
+      </ReportOptions>
+    </ReportList>
+	
+	<!-- UGC Where did you experience it (other) -->
+    <ReportList>
+      <ReportLinkId>ReportLink_UGCReportOriginContent</ReportLinkId>
+	  <SubtitleHash>RP_ORIGIN</SubtitleHash>
+      <ReportOptions>
+        <ReportOption> <LabelHash>RP_BLIMP_TEXT</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportOrigin>ReportOrigin_JobBlimpText</ReportOrigin> </ReportOption>
+		<ReportOption> <LabelHash>RP_CAPTURE_TEXT</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink>  <ReportOrigin>ReportOrigin_JobCaptureText</ReportOrigin> </ReportOption>
+		<ReportOption> <LabelHash>RP_RETURN_TEXT</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportOrigin>ReportOrigin_JobReturnText</ReportOrigin> </ReportOption>
+		<ReportOption> <LabelHash>RP_RECOVER_TEXT</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink>  <ReportOrigin>ReportOrigin_JobRecoverText</ReportOrigin> </ReportOption>
+		<ReportOption> <LabelHash>RP_BLIP_TEXT</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportOrigin>ReportOrigin_JobBlipText</ReportOrigin> </ReportOption>
+		<ReportOption> <LabelHash>RP_TICKER_TEXT</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink>  <ReportOrigin>ReportOrigin_JobTickerName</ReportOrigin> </ReportOption>
+		<ReportOption> <LabelHash>RP_PLURAL_TEXT</LabelHash> <ReportLink>ReportLink_Confirmation</ReportLink> <ReportOrigin>ReportOrigin_JobPluralTicker</ReportOrigin> </ReportOption>
+      </ReportOptions>
+    </ReportList>
+	
+	<!-- Report Player Name -->
+    <ReportList>
+      <ReportLinkId>ReportLink_PlayerName</ReportLinkId>
+	  <SubtitleHash>RP_OFFENSIVE_PLAYER_NAME</SubtitleHash>
+      <ReportOptions>
+        <ReportOption> <LabelHash>RP_PLAYER_REPORT_ALERT</LabelHash> <ReportLink>ReportLink_PlayerNameNativeUI</ReportLink> </ReportOption>
+      </ReportOptions>
+    </ReportList>
+
+  </ReportLists>
+</CReportArray>

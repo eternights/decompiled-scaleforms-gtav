@@ -1,0 +1,19 @@
+[
+xmin -7262
+ymin -40
+xmax 6706
+ymax 3065
+multiline 1
+readonly 1
+noselect 1
+wasstatic 1
+useoutlines 1
+font 44
+height 1200
+color #ff1a7299
+align center
+leftmargin 0
+rightmargin 0
+indent 0
+leading 0
+]ONLINE MEDICATIONFAST DELIVERY

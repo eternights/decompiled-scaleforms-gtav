@@ -1,0 +1,18 @@
+[
+xmin -40
+ymin -40
+xmax 5560
+ymax 404
+readonly 1
+noselect 1
+html 1
+useoutlines 1
+font 105
+height 260
+color #fff0f0f0
+align left
+leftmargin 0
+rightmargin 0
+indent 0
+leading 180
+]<p align="left"></p>

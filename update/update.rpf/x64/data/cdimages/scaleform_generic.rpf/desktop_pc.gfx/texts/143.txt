@@ -1,0 +1,20 @@
+[
+xmin 294
+ymin -40
+xmax 2586
+ymax 552
+multiline 1
+readonly 1
+noselect 1
+wasstatic 1
+html 1
+useoutlines 1
+font 44
+height 400
+color #ff000000
+align center
+leftmargin 0
+rightmargin 0
+indent 0
+leading -40
+]<p align="center"><font face="$Font2" size="20" color="#000000" letterSpacing="0.000000" kerning="0">Username:</font></p>
